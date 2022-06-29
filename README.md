@@ -31,9 +31,29 @@
   * `copy()`
   * `copy_backward()`
 
-# 学习文档
+# 文件夹介绍
 
+* `.vscode`环境配置文件
 
+* `exercise`简单测试文件
+
+* `myStl`主要的容器实现`.h`文件
+
+* `myTest`主要的容器测试文件
+
+* `textbook`主要的学习笔记记录
+
+  * [vector笔记内容](https://github.com/Dargon0123/mySTL/blob/master/textbook/my_vector.md)
+
+  * [list笔记内容](https://github.com/Dargon0123/mySTL/blob/master/textbook/my_list.md)
+  * [slist笔记内容](https://github.com/Dargon0123/mySTL/blob/master/textbook/my_slist.md)
+  * [AVLTree设计](https://github.com/Dargon0123/mySTL/blob/master/textbook/my_AVL_tree.md)
+  * [set笔记内容](https://github.com/Dargon0123/mySTL/blob/master/textbook/my_set.md)
+  * [map笔记内容](https://github.com/Dargon0123/mySTL/blob/master/textbook/my_map.md)
+  * [hashtable笔记内容](https://github.com/Dargon0123/mySTL/blob/master/textbook/my_hash_table.md)
+  * [hash_set笔记内容](https://github.com/Dargon0123/mySTL/blob/master/textbook/my_hash_set.md)
+
+* `README`文件
 
 # 容器测试
 
@@ -44,13 +64,14 @@
 
 * 基本`API`测试
 
-  * vector
-  * list
-  * stack
-  * queue
-  * set
-  * map
-  * hash_set
+  * vector：[my_vector_test](https://github.com/Dargon0123/mySTL/blob/master/myTest/my_vector_test.cpp)
+  * list：[list_test](https://github.com/Dargon0123/mySTL/blob/master/myTest/my_list_test.cpp)
+  * slist: [slist_test](https://github.com/Dargon0123/mySTL/blob/master/myTest/my_slist_test.cpp)
+  * stack：[stack_test](https://github.com/Dargon0123/mySTL/blob/master/myTest/my_stack_test.cpp)
+  * queue：[queue_test](https://github.com/Dargon0123/mySTL/blob/master/myTest/my_queue_test.cpp)
+  * set：[set_test](https://github.com/Dargon0123/mySTL/blob/master/myTest/my_set_test.cpp)
+  * map：[map_test](https://github.com/Dargon0123/mySTL/blob/master/myTest/my_map_test.cpp)
+  * hash_set：[hash_set_test](https://github.com/Dargon0123/mySTL/blob/master/myTest/my_hash_set_test.cpp)
 
 * 性能测试
 
