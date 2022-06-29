@@ -222,10 +222,17 @@ copy_backward(BidirectionalIterator1 first, BidirectionalIterator1 last, Bidirec
  * 运用异或运算符进行交换
  ************************************************************************/
 template <class T>
-void swap(T& a, T& b) {
+void my_swap(T& a, T& b) {
     a ^= b;
     b ^= a;
     a ^= b;
+}
+
+template<class T>
+void swap(T& a, T& b) {
+    T tmp = a;
+    a = b;
+    b = tmp;
 }
 
 /************************************************************************

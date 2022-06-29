@@ -54,6 +54,8 @@
         "functional": "cpp",
         "set": "cpp",
         "xtree": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "hash_set": "cpp",
+        "unordered_set": "cpp"
     }
 }

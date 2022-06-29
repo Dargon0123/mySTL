@@ -494,6 +494,16 @@ typename vector<T, Alloc>::iterator vector<T, Alloc>::erase(iterator first, iter
     return first;
 }
 
+// vector swap 只是交换三个迭代器
+template<class T, class Alloc>
+void vector<T, Alloc>::swap(vector& rhs) {
+    if(this != &rhs) {
+        mystl::swap(start, rhs.start);
+        mystl::swap(finish, rhs.finish);
+        mystl::swap(end_of_storage, rhs.end_of_storage);
+    }
+}
+
 // insert(position, value) 固定位置插入一个元素
 template<class T, class Alloc>
 typename vector<T, Alloc>::iterator 

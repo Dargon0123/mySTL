@@ -14,6 +14,7 @@
 
 #include <iostream>
 #include <vector>
+#include <unordered_set>
 #include <sstream>
 #include <iomanip> //setw
 
@@ -185,6 +186,17 @@ void test_len(size_t len1, size_t len2, size_t len3, size_t wide)
   FUN_TEST_FORMAT1(mystl::con, fun, arg, len2);              \
   FUN_TEST_FORMAT1(mystl::con, fun, arg, len3);    
 
+// for hash_set
+#define SET_TEST_P1(con, fun, arg, len1, len2, len3)         \
+  TEST_LEN(len1, len2, len3, WIDE);                          \
+  std::cout << "|         std         |";                    \
+  FUN_TEST_FORMAT1(std::unordered_set<int>, fun, arg, len1); \
+  FUN_TEST_FORMAT1(std::unordered_set<int>, fun, arg, len2); \
+  FUN_TEST_FORMAT1(std::unordered_set<int>, fun, arg, len3); \
+  std::cout << "\n|        mystl        |";                  \
+  FUN_TEST_FORMAT1(mystl::con, fun, arg, len1);              \
+  FUN_TEST_FORMAT1(mystl::con, fun, arg, len2);              \
+  FUN_TEST_FORMAT1(mystl::con, fun, arg, len3);
 
 #define CON_TEST_P2(con, fun, arg1, arg2, len1, len2, len3)  \
   TEST_LEN(len1, len2, len3, WIDE);                          \
